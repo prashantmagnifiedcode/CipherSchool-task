@@ -7,11 +7,9 @@ import Box from '@mui/material/Box'
 import  SideBarMenu from './Dashboard/SideBar/SideBar1'
 import { makeStyles } from "@material-ui/core/styles";
 
-import Popper from '@mui/material/Popper';
 const Home=()=>{
   const [isOpenDrawer, setIsOpenDrawer] = useState(false);
 
-  const label = { inputProps: { 'aria-label': 'Switch demo' } };
   const lists =useSelector((state)=>state.todoReducer.list)
   const totalTask=lists.length;
   var completed=0;

@@ -1,34 +1,17 @@
 import React ,{useState,useEffect}from "react";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 
-import StarBorderIcon from "@mui/icons-material/StarBorder";
-import DoneIcon from "@mui/icons-material/Done";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
-// import CustomizedInputBase from '../User/search'
-import Checkbox from '@mui/material/Checkbox';
-import Button from "@mui/material/Button";
+
 import Box from '@mui/material/Box';
-import AddIcon from '@mui/icons-material/Add';
-import SortIcon from '@mui/icons-material/Sort';
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
 import TodoAdd from './Add'
 import { makeStyles } from "@material-ui/core/styles";
 import { Reorder } from "framer-motion/dist/framer-motion"
-import  Modal  from "./Modal"
-
-import VisibilityIcon from '@mui/icons-material/Visibility';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
-import ModeOutlinedIcon from '@mui/icons-material/ModeOutlined';
 import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
 import axios from "axios";
 import LibraryAddCheckIcon from '@mui/icons-material/LibraryAddCheck';
-import {  TextField,} from "@material-ui/core";
+
 import { useSelector,useDispatch } from "react-redux";
 import {addtodo,deletetodo,removetodo,updatedtodo} from '../../Redux/action/'
 
@@ -197,7 +180,7 @@ const Todo = () => {
       onKeyDown={toggleDrawer(anchor, false)}
     >
 
-      <TodoAdd AllUser={AllUser}/>
+      <TodoAdd />
 
     </Box>
     </>

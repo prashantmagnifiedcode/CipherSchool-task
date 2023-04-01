@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 import {addtodo,deletetodo,removetodo} from '../../Redux/action/'
 import { useDispatch } from 'react-redux';
 import './todo.css'
-const TodoAdd=({AllUser})=>{
+const TodoAdd=()=>{
   const dispatch=useDispatch()
   const [recordData, setRecordData] = useState({
     title: "", 

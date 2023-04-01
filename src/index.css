@@ -1,0 +1,153 @@
+/* ./src/index.css */
+/* prashant */
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+ @layer components{
+     .containers_css{ @apply rounded shadow-2xl  overflow-hidden w-full flex-col m-1 md:flex p-5  md:p-0 md:max-w-xl }
+ }
+ :root {
+    --code-color: darkred;
+    --code-bg-color: #a5a5a5;
+    --code-font-size: 14px;
+    --code-line-height: 1.4;
+    --scroll-bar-color: #c5c5c5;
+    --scroll-bar-bg-color: #f6f6f6;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  * {
+    scrollbar-width: thin;
+    
+    scrollbar-color: var(--scroll-bar-color) var(--scroll-bar-bg-color);
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+    display: none;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: var(--scroll-bar-bg-color);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-bar-color);
+    border-radius: 5px;
+    border: 3px solid var(--scroll-bar-bg-color);
+  }
+  @media screen and (max-width:800px){
+
+    .rbc-btn-group > button:first-child:not(:last-child) {
+       border-top-right-radius: 0;
+       border-bottom-right-radius: 0;
+       padding: 5px 4px;}
+     .rbc-btn-group > button:not(:first-child):not(:last-child) {
+           border-radius: 0;
+           padding: 5px 4px;
+       }
+       .rbc-btn-group > button:not(:first-child):not(:last-child) {
+           border-radius: 0;
+           padding: 5px 4px;
+       }
+       .rbc-btn-group > button:last-child:not(:first-child) {
+           border-top-left-radius: 0;
+           border-bottom-left-radius: 0;
+           padding: 5px 4px;
+       } 
+}
+/* textarea {
+ margin-top: 10px;
+ 
+ width: 550px;
+ height: 100px;
+ -moz-border-bottom-colors: none;
+ -moz-border-left-colors: none;
+ -moz-border-right-colors: none;
+ -moz-border-top-colors: none;
+ background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);
+ border-color: -moz-use-text-color #FFFFFF #FFFFFF -moz-use-text-color;
+ border-image: none;
+ border-radius: 6px 6px 6px 6px;
+ border-style: none solid solid none;
+ border-width: medium 1px 1px medium;
+ box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+ color: #555555;
+ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+ font-size: 1em;
+ line-height: 1.4em;
+ padding: 5px 8px;
+ transition: background-color 0.2s ease 0s;
+}
+
+
+textarea:focus {
+   background: none repeat scroll 0 0 #FFFFFF;
+   outline-width: 0;
+} */
+ .MuiInput-underline:before{
+      border:"0px"
+    }
+    
+.app-bg-white {
+  background: #f3f3f3;
+}
+
+.app-border-white {
+  border-color: #f3f3f3;
+}
+
+.app-color-gray {
+  color: #C9C9C9;
+}
+
+.app-color-gray-2 {
+  color: #9EA3AA;
+}
+
+.app-color-black {
+  color: #2E2F31;
+}
+
+.app-bg-black {
+  background: #2E2F31;
+}
+
+.app-color-blue {
+  color: #2C56DE;
+}
+
+.app-color-green {
+  color: #7BD29A;
+}
+
+.app-color-red {
+  color: #F37575;
+}
+
+.app-bg-blue {
+  background: #2C56DE;
+}
+
+.app-bg-gray-2 {
+  background: #E8E8E8;
+}
+
+.app-bg-gray-3 {
+  background: #E6E6E6;
+}
+
+.app-bg-gray-4 {
+  background: #CFCFCF;
+}
+
+.app-border-gray-3 {
+  border-color: #CFCFCF;
+}

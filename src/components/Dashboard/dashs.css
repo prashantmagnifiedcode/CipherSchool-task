@@ -5,8 +5,8 @@
 }
 
 .containers{
-    background: rgb(103, 80, 236);
-    height: 100vh;
+    /* background: rgb(103, 80, 236); */
+    height: 100%;
     width: 100vw;
     display: grid;
     grid-template-columns: 5% auto;
@@ -49,7 +49,10 @@
     
     }
     ._index .menu_data :hover{
-        background: rgb(231, 232, 235);
+        background: rgb(235, 210, 111);
+        border-radius: 10px;
+        width: 90%;
+        
     }
 ._index1 .menu_data{
     display: flex;
@@ -73,7 +76,7 @@
     }
 .Access{
     display: grid;
-    grid-template-rows: 15vh 85vh ;
+    grid-template-rows: 15vh 78vh ;
     
 }
 
